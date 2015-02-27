@@ -1,0 +1,7 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<c:if test="${hiddenDivContentStatus!=null}">
+	<script>$("div.hiddenContent").show();</script>
+	<c:remove var="hiddenDivContentStatus" scope="request"/>
+</c:if>
+<%--如果没有什么都不做--%>
+  

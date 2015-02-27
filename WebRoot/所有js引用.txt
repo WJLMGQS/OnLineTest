@@ -1,0 +1,93 @@
+需要修改项目名的js：optionAjax.js、bindSimpleImageView.js、dealJudgeView.js、dealFillBlankView.js、dealMultipleView.js、dealSingleView.js、easy_validator.pack.js
+
+	<%--设置窗体右边显示界面的基本样式--%>  
+ 	<link media="screen" type="text/css" href="${pageContext.request.contextPath}/css/showRightStyle.css"	rel="stylesheet">
+
+	<%--使用jquery必须导入--%>
+ 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.3.2.min.js"></script>
+
+	<%--验证框架框架--%>
+  	<script type="text/javascript" src="${pageContext.request.contextPath}/js/easy_validator.pack.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.bgiframe.min.js"></script>
+	<link  href="${pageContext.request.contextPath}/css/validate_failed.css" rel="stylesheet" type="text/css" />
+	<%--扩展验证框架的自定义函数--%>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/remittence_my.js"></script>
+	
+	<%--上传框架--%>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.uploadify.v2.1.0.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/swfobject.js"></script>
+	<link  href="${pageContext.request.contextPath}/css/uploadify.css" rel="stylesheet" type="text/css" />
+	
+	<%--消息对话框框架--%>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.alerts.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.ui.draggable.js"></script>
+	<link href="${pageContext.request.contextPath}/css/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />
+	<%--显示确认对话框框（基于框架实现）--%>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/showConfirmDialog.js"></script>
+	
+	<%--构建左边导航树的样式--%>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/simpla.jquery.configuration.js" ></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/facebox.js" ></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.wysiwyg.js"></script>
+	<link media="screen" type="text/css" href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet">
+	<link media="screen" type="text/css" href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
+	<link media="screen" type="text/css" href="${pageContext.request.contextPath}/css/invalid.css" rel="stylesheet">
+	
+	<%--ajax异步消息函数--%>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/optionAjax.js"></script>
+	
+	<%--试题创建和更新时所在的层的伸缩--%>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/hiddenDivContent.js"></script>
+  	<link href="${pageContext.request.contextPath}/css/style_divHidden.css" rel="stylesheet" type="text/css" />
+  
+  	<%--填空题创建更新时试题选项增减函数--%>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/bulidFillBlankForm.js"></script>
+	<%--多选题创建更新时试题选项增减函数--%>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/bulidMultipleForm.js"></script>
+
+	 <%--表格框架--%>
+  	<style type="text/css" title="currentStyle">
+			@import "${pageContext.request.contextPath}/css/demo_page.css";
+			@import "${pageContext.request.contextPath}/css/jquery.dataTables.css";
+	</style>	
+ 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.dataTables.min.js"  ></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/loadTableAble.js"></script>
+
+	<%-- 图片放大显示插件--%>
+ 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.imagePreview.1.0.js"></script>
+ 	<%-- 绑定试题插入时确定插入和重置按钮--%>
+ 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/bindQuestionButton.js"></script>
+ 	<%-- 处理单选试题插入和表格模板显示的函数定义--%>
+ 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/dealSingleView.js"></script>
+ 	 <%-- 处理多选试题插入和表格模板显示的函数定义--%>
+ 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/dealMultipleView.js"></script>
+ 	 <%-- 处理填空试题插入和表格模板显示的函数定义--%>
+ 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/dealFillBlankView.js"></script>
+ 	<%-- 显示单选试题的显示样式--%>
+	<link href="${pageContext.request.contextPath}/css/style_question.css" rel="stylesheet" type="text/css"  />
+	<%-- 绑定图片错误显示时的处理函数和代替图片--%>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/bindSimpleImageView.js"></script>
+	<%--在批量给图片添加图片的时候为图片的src和href动态赋值--%>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/setListImageLink.js"></script>
+	
+	<%--整数微调控件--%>
+  	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-spin.js"></script>
+	
+	<%--冒泡菜单栏插件--%>	
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/css-dock-menu/js/interface.js"></script>
+	<!--[if lt IE 7]>
+	 <style type="text/css">
+	 .dock img { behavior: url('${pageContext.request.contextPath}/js/css-dock-menu/js/iepngfix.htc') }
+	 </style>
+	<![endif]-->
+	<link href="${pageContext.request.contextPath}/js/css-dock-menu/style.css" rel="stylesheet" type="text/css" />
+	
+	<%--日期选择器插件	--%>
+	<link href="${pageContext.request.contextPath}/cssdatePicker.css" rel="stylesheet" type="text/css"  />
+	<script src="${pageContext.request.contextPath}/js/jquery.datePicker-min.js" type="text/javascript"></script>	
+	
+	<%--设置学生窗体内容界面的基本样式--%>  
+ 	<link media="screen" type="text/css" href="${pageContext.request.contextPath}/css/showContentStyle.css"	rel="stylesheet" />
+	
+	<%-- 学生答卷检测js--%>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/exam_testUnits.js"></script>

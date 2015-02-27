@@ -1,0 +1,8 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<c:if test="${showMessage!=null}">
+	<script type="text/javascript">jAlert('${showMessage}', '服务端消息');</script>
+	<c:remove var="showMessage" scope="request"/>
+</c:if>
+<%--如果有消息就通过alert方式提示，并移除--%>
+<%--如果没有什么都不做--%>
+  

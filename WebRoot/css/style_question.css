@@ -1,0 +1,13 @@
+.defineTop{
+	border:1px;
+	background-color:#FFF;
+	width:500px;
+	height:300px;
+	margin-bottom:0px;
+	padding:0px;
+}
+.defineBase{
+	background-color:#FF0;
+	border:1px;
+	float:inherit;
+}

@@ -1,0 +1,45 @@
+/**
+ **作者：翁加林
+ **时间：2012-7-27
+ **文件名：Admin_name_grade.java
+ **包名：org.wjlmgqs.web.controller
+ **工程名：OnLineTest03
+ */
+
+package org.wjlmgqs.web.controller.admin;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.wjlmgqs.daomain.Department;
+import org.wjlmgqs.daomain.Grade;
+import org.wjlmgqs.service.impl.DepartmentServiceImp;
+import org.wjlmgqs.service.impl.GradeServiceImp;
+
+public class Name_grade extends HttpServlet {
+	private static final long serialVersionUID = -5112917592281597547L;
+
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		GradeServiceImp gradeServiceImp = new GradeServiceImp();
+		List<Grade> grades = gradeServiceImp.getAllGrades();
+		DepartmentServiceImp departmentServiceImp = new DepartmentServiceImp();
+		List<Department> departments = departmentServiceImp.getAllDepartments();
+		request.setAttribute("grades", grades);
+		request.setAttribute("departments", departments);
+		request.getRequestDispatcher("/teacher/admin/name_grade.jsp")
+				.forward(request, response);
+		return;
+	}
+
+}

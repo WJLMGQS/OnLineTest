@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/gson-2.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/hibernate-validator-4.2.0.Final.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mysql-connector-java-5.0.3-bin.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.json.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/poi-3.6-20091214.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/slf4j-log4j12.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/validation-api-1.0.0.GA.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>

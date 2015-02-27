@@ -1,0 +1,16 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page import="org.wjlmgqs.daomain.Teacher"%>
+	<%
+  	Teacher t = (Teacher)request.getSession().getAttribute("professionTeacher");
+  	if(t!=null){
+  	}else{
+  		String showMessage= "您尚未登录--3秒后自动跳转到登录界面<meta http-equiv='refresh' content=3;URL='"+
+  				request.getContextPath()+"/teacherLogin'><script language='JavaScript'>if (window != top)top.location.href = location.href;</script> ";
+  	//实现自动跳转功能，且从子窗口自动跳转到整个父窗口
+  		request.setAttribute("showMessage",showMessage);
+ 		request.getRequestDispatcher("/showMessage.jsp").forward(request,response);
+  		return;
+  	}
+  %>
+
+  
